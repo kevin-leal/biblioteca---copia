@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Start your development with Creative Design landing page."
+    />
+    <meta name="author" content="Devcrud" />
+    <title>Universidad Tecnológica de Morelia</title>
+
+    <!-- font icons -->
+    <link
+      rel="stylesheet"
+      href="assets/vendors/themify-icons/css/themify-icons.css"
+    />
+
+    <!-- Bootstrap + Creative Design main styles -->
+    <link rel="stylesheet" href="assets/css/csslogin.css" />
+  </head>
+  <body>
+    <h2>Bienvenido a la biblioteca de la UTM</h2>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>Crear Tu Cuenta</h1>
+          <span>Ingresa los siguientes datos para tu registro</span>
+          <input type="text" placeholder="Nombre" />
+          <input type="email" placeholder="Correo electronico" />
+          <input type="password" placeholder="Contraseña" />
+          <button>Registrarse</button>
+          <hr />
+          <a href="../public_html/index.html" class="btn">Volver</a>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Iniciar Sesion</h1>
+          <span>Ingresa los datos para iniciar sesion</span>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <a href="#">¿Olvidaste tu contraseña?</a>
+          <button>Iniciar Sesion</button>
+          <hr />
+          <a href="../public_html/index.html" class="btn">Volver</a>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Bienvenido de regreso!</h1>
+            <p>Nos alegra que estes de regreso</p>
+            <button class="ghost" id="signIn">Iniciar Sesion</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Hola, Te Damos La Bienvenida!</h1>
+            <p>
+              Para poder crear una cuenta solo tienes que ingresar unos
+              sencillos datos
+            </p>
+            <button class="ghost" id="signUp">Registrarse</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const signUpButton = document.getElementById("signUp");
+      const signInButton = document.getElementById("signIn");
+      const container = document.getElementById("container");
+
+      signUpButton.addEventListener("click", () => {
+        container.classList.add("right-panel-active");
+      });
+
+      signInButton.addEventListener("click", () => {
+        container.classList.remove("right-panel-active");
+      });
+    </script>
+  </body>
+</html>
