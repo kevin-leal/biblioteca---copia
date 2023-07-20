@@ -18,6 +18,26 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
+<!-- Ventana modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Encabezado de la ventana modal -->
+            <div class="modal-header bg-dark text-white">
+              <h5 class="modal-title">Información del libro</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <!-- Cuerpo de la ventana modal -->
+            <div class="modal-body" id="modalBody">
+              <!-- Contenido del modal generado dinámicamente -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     <!-- Page Navbar -->
     <nav id="scrollspy" class="navbar page-navbar navbar-light navbar-expand-md fixed-top" data-spy="affix"
         data-offset-top="20">
@@ -82,8 +102,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img1,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
@@ -105,8 +124,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img2,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
@@ -128,8 +146,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img3,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
@@ -151,8 +168,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img4,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
@@ -180,8 +196,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img5,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
@@ -203,8 +218,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img6,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
@@ -226,8 +240,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img1,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
@@ -249,8 +262,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img2,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
@@ -355,3 +367,54 @@
 </body>
 
 </html>
+
+<script>
+    // Ventanas modales
+function abrirModal(img, titulo, autor, editorial, fecha, descripcion) {
+      // Obtener el elemento del cuerpo del modal
+      var modalBody = document.getElementById('modalBody');
+
+      // Generar el contenido dinámicamente
+      modalBody.innerHTML = `
+      <img src="${img}" alt="img">
+        <div>
+          <h6>${titulo}</h6>
+          <p>Autor: ${autor}</p>
+          <p>Editorial: ${editorial}</p>
+          <p>Fecha de publicación: ${fecha}</p>
+          <p>Descripción del libro: ${descripcion}</p>
+          <div class="text-center">
+          <button type="button" class="btn btn-dark">Reservar</button>
+          <select class="form-select">
+            <option value="1">1 día</option>
+            <option value="2">2 días</option>
+            <option value="3">3 días</option>
+          </select>      
+          </div>
+        </div>
+      `;
+
+      // Mostrar el modal
+      let myModal = new bootstrap.Modal(document.getElementById('myModal'));
+      myModal.show();
+    }
+    
+    let img1="https://noveladeterror.com/wp-content/uploads/Portada-La-Sangre-MAnda.jpg"
+    let img2="https://m.media-amazon.com/images/I/81ySgYEwArL._SL1500_.jpg"
+    let img3="https://m.media-amazon.com/images/I/819RX3PUdCL._SL1500_.jpg"
+    let img4="https://m.media-amazon.com/images/I/51W9ojaJ3BL._SY445_SX342_.jpg"
+    let img5="https://m.media-amazon.com/images/I/717-MYvdpeL._SL1500_.jpg"
+    let img6="https://m.media-amazon.com/images/I/91+Jc1QEW0L._SL1500_.jpg"
+</script>
+
+<style>
+    .modal-body {
+      display: flex;
+    }
+
+    .modal-body img {
+      width: 200px;
+      height: auto;
+      margin-right: 20px;
+    }
+  </style>
