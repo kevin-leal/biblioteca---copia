@@ -6,11 +6,6 @@ router.get("/", function (req, res, next) {
   res.render("index", { title: "INICIO" });
 });
 
-//GET register page
-router.get("/register", function (req, res, next) {
-  res.render("register", { title: "REGISTRO" });
-});
-
 router.get("/ebook", function (req, res, next) {
   res.render("ebook", { title: "EBOOK" });
 });
