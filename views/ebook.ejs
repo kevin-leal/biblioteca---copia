@@ -1,84 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Creative Design landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Universidad Tecnológica de Morelia</title>
-
-    <!-- font icons -->
-    <link rel="stylesheet" href="/vendors/themify-icons/css/themify-icons.css">
-
-    <!-- Bootstrap + Creative Design main styles -->
-    <link rel="stylesheet" href="/css/creative-design.css">
-
-</head>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-
-<!-- Ventana modal -->
-<div class="modal fade" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <!-- Encabezado de la ventana modal -->
-        <div class="modal-header bg-dark text-white">
-          <h5 class="modal-title">Información del libro</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <!-- Cuerpo de la ventana modal -->
-        <div class="modal-body" id="modalBody">
-          <!-- Contenido del modal generado dinámicamente -->
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <!-- Page Navbar -->
-    <nav id="scrollspy" class="navbar page-navbar navbar-light navbar-expand-md fixed-top" data-spy="affix"
-        data-offset-top="20">
-        <div class="container">
-
-            <a class="navbar-brand" href="/"><img src="/imgs/utm.png" height="50" width="210 " alt="About Us"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/catalogo">Catálogo</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/ebook">Ebooks</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/informacion">Información</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/iniciosesion">Iniciar sesión</a>
-                    </li>
-                    <div class="group">
-                        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
-                            <g>
-                                <path
-                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
-                                </path>
-                            </g>
-                        </svg>
-                        <input placeholder="Buscar" type="search" class="input">
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </nav><!-- End of Page Navbar -->
+<%- include('../views/elements/header_nav.ejs'); %><!-- End of Page Navbar --> 
 
     <!-- section CATÁLOGO -->
     <section>
@@ -101,7 +24,8 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img1,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer
+                                            <span class="btn-leer"
+                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
@@ -123,7 +47,8 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img2,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer
+                                            <span class="btn-leer"
+                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
@@ -145,7 +70,8 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img3,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer
+                                            <span class="btn-leer"
+                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
@@ -167,7 +93,8 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img4,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer
+                                            <span class="btn-leer"
+                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
@@ -195,7 +122,8 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img5,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer
+                                            <span class="btn-leer"
+                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
@@ -217,7 +145,8 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img6,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer
+                                            <span class="btn-leer"
+                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
@@ -239,7 +168,8 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img1,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer
+                                            <span class="btn-leer"
+                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
@@ -261,7 +191,8 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img2,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer
+                                            <span class="btn-leer"
+                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
@@ -285,73 +216,8 @@
 
 
     <!-- Section -->
-    <section class="pb-0">
-        <!-- Container -->
-        <div class="container">
-            <!-- Pre footer -->
-            <div class="pre-footer">
-                <ul class="list">
-                    <li class="list-head">
-                        <h6 class="font-weight-bold">ABOUT US</h6>
-                    </li>
-                    <li class="list-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nobis fugit maxime deleniti
-                            minus optio accusamus, quam maiores explicabo sunt.</p>
-                        <a href="#"><strong class="text-primary">Creative</strong> <span
-                                class="text-dark">Design</span></a>
-                    </li>
-                </ul>
-                <ul class="list">
-                    <li class="list-head">
-                        <h6 class="font-weight-bold">USEFUL LINKS</h6>
-                    </li>
-                    <li class="list-body">
-                        <div class="row">
-                            <div class="col">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
-                                <a href="#">Link 4</a>
-                            </div>
-                            <div class="col">
-                                <a href="#">Link 5</a>
-                                <a href="#">Link 6</a>
-                                <a href="#">Link 7</a>
-                                <a href="#">Link 8</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="list">
-                    <li class="list-head">
-                        <h6 class="font-weight-bold">CONTACT INFO</h6>
-                    </li>
-                    <li class="list-body">
-                        <p>Contact us and we'll get back to you within 24 hours.</p>
-                        <p><i class="ti-location-pin"></i> 12345 Fake ST NoWhere AB Country</p>
-                        <p><i class="ti-email"></i> info@website.com</p>
-                        <div class="social-links">
-                            <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
-                            <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
-                            <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
-                            <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
-                            <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
-                            <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
-                        </div>
-                    </li>
-                </ul>
-            </div><!-- End of Pre footer -->
-
-            <!-- foooter -->
-            <footer class="footer">
-                <p>Copyright
-                    <script>document.write(new Date().getFullYear())</script> &copy; <a
-                        href="http://www.devcrud.com">DevCRUD</a>
-                </p>
-            </footer><!-- End of Footer-->
-
-        </div><!--End of Container -->
-    </section><!-- End of Section -->
+    <%- include('../views/elements/footer.ejs'); %>
+    <!-- End of Section -->
 
     <!-- core  -->
     <script src="/vendors/jquery/jquery-3.4.1.js"></script>
@@ -366,50 +232,3 @@
 </body>
 
 </html>
-
-<script>
-    // Ventanas modales
-function abrirModal(img, titulo, autor, editorial, fecha, descripcion) {
-      // Obtener el elemento del cuerpo del modal
-      var modalBody = document.getElementById('modalBody');
-
-      // Generar el contenido dinámicamente
-      modalBody.innerHTML = `
-      <img src="${img}" alt="img">
-        <div>
-          <h6>${titulo}</h6>
-          <p>Autor: ${autor}</p>
-          <p>Editorial: ${editorial}</p>
-          <p>Fecha de publicación: ${fecha}</p>
-          <p>Descripción del libro: ${descripcion}</p>
-          <div class="text-center">
-          <button type="button" class="btn btn-dark">Descargar</button>
-  
-          </div>
-        </div>
-      `;
-
-      // Mostrar el modal
-      let myModal = new bootstrap.Modal(document.getElementById('myModal'));
-      myModal.show();
-    }
-    
-    let img1="https://noveladeterror.com/wp-content/uploads/Portada-La-Sangre-MAnda.jpg"
-    let img2="https://m.media-amazon.com/images/I/81ySgYEwArL._SL1500_.jpg"
-    let img3="https://m.media-amazon.com/images/I/819RX3PUdCL._SL1500_.jpg"
-    let img4="https://m.media-amazon.com/images/I/51W9ojaJ3BL._SY445_SX342_.jpg"
-    let img5="https://m.media-amazon.com/images/I/717-MYvdpeL._SL1500_.jpg"
-    let img6="https://m.media-amazon.com/images/I/91+Jc1QEW0L._SL1500_.jpg"
-</script>
-
-<style>
-    .modal-body {
-      display: flex;
-    }
-
-    .modal-body img {
-      width: 200px;
-      height: auto;
-      margin-right: 20px;
-    }
-  </style>

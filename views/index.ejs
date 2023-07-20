@@ -1,95 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Creative Design landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Universidad Tecnológica de Morelia</title>
-
-    <!-- font icons -->
-    <link rel="stylesheet" href="/vendors/themify-icons/css/themify-icons.css">
-
-    <!-- Bootstrap + Creative Design main styles -->
-    <link rel="stylesheet" href="/css/creative-design.css">
-
-</head>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-
-<!-- Ventana modal -->
-<div class="modal fade" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <!-- Encabezado de la ventana modal -->
-        <div class="modal-header bg-dark text-white">
-          <h5 class="modal-title">Información del libro</h5>
-          <button type="button" class="close " data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <!-- Cuerpo de la ventana modal -->
-        <div class="modal-body" id="modalBody">
-          <!-- Contenido del modal generado dinámicamente -->
-        </div>
-      </div>
-    </div>
-  </div>
-  
-
-    <!-- Page Navbar -->
-    <nav id="scrollspy" class="navbar page-navbar navbar-light navbar-expand-md fixed-top" data-spy="affix"
-        data-offset-top="20">
-        <div class="container">
-
-            <a class="navbar-brand" href="/"><img src="/imgs/utm.png" height="50" width="210 " alt="About Us"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/catalogo">Catálogo</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/ebook">Ebooks</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/informacion">Información</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/iniciosesion">Iniciar sesión</a>
-                    </li>
-                    <div class="group">
-                        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
-                            <g>
-                                <path
-                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
-                                </path>
-                            </g>
-                        </svg>
-                        <input placeholder="Buscar" type="search" class="input">
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </nav><!-- End of Page Navbar -->
-
-    <!-- Page Header -->
-    <header id="home" class="header">
-        <div class="overlay"></div>
-        <div class="header-content">
-
-
-        </div>
-    </header><!-- End of Page Header -->
-
+<%- include('../views/elements/header_nav.ejs'); %>
     <!-- About Section -->
     <section id="about">
         <!-- Container -->
@@ -100,7 +12,7 @@
                     <h1> Préstamos </h1>
                 </div>
                 <div class="content">
-                    <h5 class="title mb-3">PRÉSTAMO</h5>
+                    <h5 class="title mb-3">PRÉSTAMO </h5>
                     <!-- row -->
                     <div class="row">
                         <div class="col">
@@ -133,19 +45,22 @@
                             <div class="col-md-3">
                                 <div class="wsk-cp-product">
                                     <div class="wsk-cp-img">
-                                        <img src="/imgs/libro11.jfif" alt="Product" class="img-responsive" />
+                                        <img src="https://www.gandhi.com.mx/media/catalog/product/9/7/9789587627206.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=478&width=300&canvas=300:478" alt="Product" class="img-responsive" />
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img1,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer
+                                            <span class="btn-leer"
+                                                onclick= go href="../public_html/ebook.html">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
-                                            <h3>My face not my heart</h3>
+                                            <h3>Lógica De Programación</h3>
                                         </div>
                                         <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
+                                            <p>Muchas personas confunden la Programación con la Lógica 
+                                                de Programación. La primera involucra el conocimiento de técnicas e instrucciones de un determinado lenguaje 
+                                                a través de los cuales se hace sencillo lograr que el computador obtenga unos resultados 
+                                                mucho más rápido que nosotros.</p>
                                         </div>
                                         <div class="card-footer">
                                         </div>
@@ -155,20 +70,20 @@
                             <div class="col-md-3">
                                 <div class="wsk-cp-product">
                                     <div class="wsk-cp-img">
-                                        <img src="/imgs/libro12.jfif" alt="Product" class="img-responsive" />
+                                        <img src="https://anayamultimedia.es/imagenes/libros/grande/9788441543539-introduccion-a-la-programacion.jpg" alt="Product" class="img-responsive" />
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
                                             <span class="btn-leer"
-                                            type="button" class="btn btn-primary" onclick="abrirModal(img2,'Titulo del Libro 2', 'Autor 2', 'Editorial 2', 'Fecha de Publicación 2', 'Descripción del Libro 2')">Leer
+                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
-                                            <h3>My face not my heart</h3>
+                                            <h3>Introducción a la programación</h3>
                                         </div>
                                         <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
+                                            <p>Vivimos rodeados de dispositivos 'inteligentes' que se caracterizan 
+                                                por ser, en mayor o menor medida, programables.</p>
                                         </div>
                                         <div class="card-footer">
                                         </div>
@@ -178,20 +93,22 @@
                             <div class="col-md-3">
                                 <div class="wsk-cp-product">
                                     <div class="wsk-cp-img">
-                                        <img src="/imgs/libro13.gif" alt="Product" class="img-responsive" />
+                                        <img src="https://www.elsotano.com/imagenes_grandes/9789587/978958792268.JPG" alt="Product" class="img-responsive" />
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
                                             <span class="btn-leer"
-                                            type="button" class="btn btn-primary" onclick="abrirModal(img6,'Titulo del Libro 2', 'Autor 2', 'Editorial 2', 'Fecha de Publicación 2', 'Descripción del Libro 2')">Leer
+                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
-                                            <h3>My face not my heart</h3>
+                                            <h3>Lógica De Programación. Solucionario En Pseudocódigo</h3>
                                         </div>
                                         <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
+                                            <p>En este libro usted encontrará soluciones posibles escritas en seudocódigo, según los estándares 
+                                                utilizados en mi libro Lógica de programación, y de forma que se pueda fomentar el desarrollo de 
+                                                la lógica que se utiliza en la programación de computadores desde una perspectiva general sin 
+                                                estar atada a ningún tipo de lenguaje de programación específico.</p>
                                         </div>
                                         <div class="card-footer">
                                         </div>
@@ -201,20 +118,21 @@
                             <div class="col-md-3">
                                 <div class="wsk-cp-product">
                                     <div class="wsk-cp-img">
-                                        <img src="/imgs/libro14.jfif" alt="Product" class="img-responsive" />
+                                        <img src="https://www.publicacionesupec.org/public/presses/1/submission_64_63_coverImage_es_ES_t.jpg" alt="Product" class="img-responsive" />
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
                                             <span class="btn-leer"
-                                            type="button" class="btn btn-primary" onclick="abrirModal(img3,'Titulo del Libro 2', 'Autor 2', 'Editorial 2', 'Fecha de Publicación 2', 'Descripción del Libro 2')">Leer
+                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
-                                            <h3>My face not my heart</h3>
+                                            <h3>Fundamentos de programación utilizando PSeInt</h3>
                                         </div>
                                         <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
+                                            <p>La presente obra está dirigida a estudiantes y profesionales de informática o áreas afines. 
+                                                Su objetivo es proporcionar una guía teórica y práctica de fácil uso y, a su vez, rigurosa 
+                                                en la programación de computadoras.</p>
                                         </div>
                                         <div class="card-footer">
                                         </div>
@@ -224,11 +142,12 @@
                         </div>
                     </div>
                     <div style="text-align: center;"class="text-box" >
-                        <a href="../public_html/catalogo.html" class="btn btn-white btn-animate">Ver más</a>
+                        <a href="/catalogo" class="btn btn-white btn-animate">Ver más</a>
                     </div>
                 </div>
                 
             </div>
+
             <div class="card-deck mt-3">
                 <div class="container text-center">
                     <h1>E-books</h1>
@@ -239,20 +158,21 @@
                             <div class="col-md-3">
                                 <div class="wsk-cp-product">
                                     <div class="wsk-cp-img">
-                                        <img src="/imgs/libro11.jfif" alt="Product" class="img-responsive" />
+                                        <img src="https://img2.rtve.es/im/5886324/?w=297" alt="Product" class="img-responsive" />
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
                                             <span class="btn-leer"
-                                            type="button" class="btn btn-primary" onclick="abrirModal(img4,'Titulo del Libro 2', 'Autor 2', 'Editorial 2', 'Fecha de Publicación 2', 'Descripción del Libro 2')">Leer
+                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
-                                            <h3>My face not my heart</h3>
+                                            <h3>Cocina vegana creativa</h3>
                                         </div>
                                         <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
+                                            <p>
+                                                La nutricionista Lucía Martínez nos recomienda una novedad editorial: Cocina Vegana 
+                                                Creativa (Zenith, 2021) de Virginia Garcia</p>
                                         </div>
                                         <div class="card-footer">
                                         </div>
@@ -262,20 +182,21 @@
                             <div class="col-md-3">
                                 <div class="wsk-cp-product">
                                     <div class="wsk-cp-img">
-                                        <img src="/imgs/libro12.jfif" alt="Product" class="img-responsive" />
+                                        <img src="https://m.media-amazon.com/images/I/51AO42xrkcL._SX331_BO1,204,203,200_.jpg" alt="Product" class="img-responsive" />
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
                                             <span class="btn-leer"
-                                            type="button" class="btn btn-primary" onclick="abrirModal(img5,'Titulo del Libro 2', 'Autor 2', 'Editorial 2', 'Fecha de Publicación 2', 'Descripción del Libro 2')">Leer
+                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
-                                            <h3>My face not my heart</h3>
+                                            <h3>Manual de Energías Renovables</h3>
                                         </div>
                                         <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
+                                            <p>Las energías renovables son energías que se obtienen de fuentes naturales inagotables, 
+                                                ya sea por la inmensa cantidad de energía que contienen, o porque son capaces de regenerarse 
+                                                por medios naturales.</p>
                                         </div>
                                         <div class="card-footer">
                                         </div>
@@ -285,20 +206,21 @@
                             <div class="col-md-3">
                                 <div class="wsk-cp-product">
                                     <div class="wsk-cp-img">
-                                        <img src="/imgs/libro13.gif" alt="Product" class="img-responsive" />
+                                        <img src="https://m.media-amazon.com/images/I/41QHAldyNEL._BO1,204,203,200_.jpg" alt="Product" class="img-responsive" />
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
                                             <span class="btn-leer"
-                                            type="button" class="btn btn-primary" onclick="abrirModal(img1,'Titulo del Libro 2', 'Autor 2', 'Editorial 2', 'Fecha de Publicación 2', 'Descripción del Libro 2')">Leer
+                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
-                                            <h3>My face not my heart</h3>
+                                            <h3>Diseño textil: Tejidos y técnicas</h3>
                                         </div>
                                         <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
+                                            <p>No es infrecuente que el extraordinario trabajo de los diseñadores textiles pase inadvertido y que quienes recojan 
+                                                todas las alabanzas sean los diseñadores de moda. El diseño textil disfruta de escaso reconocimiento, sin embargo, 
+                                                sin textiles innovadores, el diseño de moda perdería mucho interés.</p>
                                         </div>
                                         <div class="card-footer">
                                         </div>
@@ -308,20 +230,20 @@
                             <div class="col-md-3">
                                 <div class="wsk-cp-product">
                                     <div class="wsk-cp-img">
-                                        <img src="/imgs/libro14.jfif" alt="Product" class="img-responsive" />
+                                        <img src="https://www.reverte.com/media/reverte/images/thumbs/edition-73864-236x329.jpg" alt="Product" class="img-responsive" />
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
                                             <span class="btn-leer"
-                                            type="button" class="btn btn-primary" onclick="abrirModal(img6,'Titulo del Libro 2', 'Autor 2', 'Editorial 2', 'Fecha de Publicación 2', 'Descripción del Libro 2')">Leer
+                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
                                                 más</span>
                                         </div>
                                         <div class="title-product">
-                                            <h3>My face not my heart</h3>
+                                            <h3>Biotecnología para principiantes</h3>
                                         </div>
                                         <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
+                                            <p>La biotecnología es una ciencia aplicada que utiliza organismos vivos y sus procesos 
+                                                bioquímicos con la finalidad de obtener, crear o modificar productos para usos específicos.</p>
                                         </div>
                                         <div class="card-footer">
                                         </div>
@@ -331,7 +253,7 @@
                         </div>
                     </div>
                     <div style="text-align: center;"class="text-box" >
-                        <a href="../public_html/ebook.html" class="btn btn-white btn-animate">Ver más</a>
+                        <a href="/ebook" class="btn btn-white btn-animate">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -369,73 +291,8 @@
 
 
     <!-- Section -->
-    <section class="pb-0">
-        <!-- Container -->
-        <div class="container">
-            <!-- Pre footer -->
-            <div class="pre-footer">
-                <ul class="list">
-                    <li class="list-head">
-                        <h6 class="font-weight-bold">ABOUT US</h6>
-                    </li>
-                    <li class="list-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nobis fugit maxime deleniti
-                            minus optio accusamus, quam maiores explicabo sunt.</p>
-                        <a href="#"><strong class="text-primary">Creative</strong> <span
-                                class="text-dark">Design</span></a>
-                    </li>
-                </ul>
-                <ul class="list">
-                    <li class="list-head">
-                        <h6 class="font-weight-bold">USEFUL LINKS</h6>
-                    </li>
-                    <li class="list-body">
-                        <div class="row">
-                            <div class="col">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
-                                <a href="#">Link 4</a>
-                            </div>
-                            <div class="col">
-                                <a href="#">Link 5</a>
-                                <a href="#">Link 6</a>
-                                <a href="#">Link 7</a>
-                                <a href="#">Link 8</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="list">
-                    <li class="list-head">
-                        <h6 class="font-weight-bold">CONTACT INFO</h6>
-                    </li>
-                    <li class="list-body">
-                        <p>Contact us and we'll get back to you within 24 hours.</p>
-                        <p><i class="ti-location-pin"></i> 12345 Fake ST NoWhere AB Country</p>
-                        <p><i class="ti-email"></i> info@website.com</p>
-                        <div class="social-links">
-                            <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
-                            <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
-                            <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
-                            <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
-                            <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
-                            <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
-                        </div>
-                    </li>
-                </ul>
-            </div><!-- End of Pre footer -->
-
-            <!-- foooter -->
-            <footer class="footer">
-                <p>Copyright
-                    <script>document.write(new Date().getFullYear())</script> &copy; <a
-                        href="http://www.devcrud.com">DevCRUD</a>
-                </p>
-            </footer><!-- End of Footer-->
-
-        </div><!--End of Container -->
-    </section><!-- End of Section -->
+    <%- include('../views/elements/footer.ejs'); %>
+<!-- End of Section -->
 
     <!-- core  -->
     <script src="/vendors/jquery/jquery-3.4.1.js"></script>
@@ -459,53 +316,4 @@ function abrirURL(){
     //Abrir URL que necesites
     console.log("Han pasado 3 segundos");
 };
-
-// Ventanas modales
-function abrirModal(img, titulo, autor, editorial, fecha, descripcion) {
-      // Obtener el elemento del cuerpo del modal
-      var modalBody = document.getElementById('modalBody');
-
-      // Generar el contenido dinámicamente
-      modalBody.innerHTML = `
-      <img src="${img}" alt="img">
-        <div>
-          <h6>${titulo}</h6>
-          <p>Autor: ${autor}</p>
-          <p>Editorial: ${editorial}</p>
-          <p>Fecha de publicación: ${fecha}</p>
-          <p>Descripción del libro: ${descripcion}</p>
-          <div class="text-center">
-          <button type="button" class="btn btn-dark">Reservar</button>
-          <select class="form-select">
-            <option value="1">1 día</option>
-            <option value="2">2 días</option>
-            <option value="3">3 días</option>
-          </select>      
-          </div>
-        </div>
-      `;
-
-      // Mostrar el modal
-      let myModal = new bootstrap.Modal(document.getElementById('myModal'));
-      myModal.show();
-    }
-    
-    let img1="https://noveladeterror.com/wp-content/uploads/Portada-La-Sangre-MAnda.jpg"
-    let img2="https://m.media-amazon.com/images/I/81ySgYEwArL._SL1500_.jpg"
-    let img3="https://m.media-amazon.com/images/I/819RX3PUdCL._SL1500_.jpg"
-    let img4="https://m.media-amazon.com/images/I/51W9ojaJ3BL._SY445_SX342_.jpg"
-    let img5="https://m.media-amazon.com/images/I/717-MYvdpeL._SL1500_.jpg"
-    let img6="https://m.media-amazon.com/images/I/91+Jc1QEW0L._SL1500_.jpg"
 </script>
-
-<style>
-    .modal-body {
-      display: flex;
-    }
-
-    .modal-body img {
-      width: 200px;
-      height: auto;
-      margin-right: 20px;
-    }
-  </style>
