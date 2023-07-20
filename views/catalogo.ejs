@@ -1,168 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Creative Design landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Universidad Tecnológica de Moreliaaa</title>
-
-    <!-- font icons -->
-    <link rel="stylesheet" href="/vendors/themify-icons/css/themify-icons.css">
-
-    <!-- Bootstrap + Creative Design main styles -->
-    <link rel="stylesheet" href="/css/creative-design.css">
-
-</head>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-
-    <!-- Page Navbar -->
-    <nav id="scrollspy" class="navbar page-navbar navbar-light navbar-expand-md fixed-top" data-spy="affix"
-        data-offset-top="20">
-        <div class="container">
-
-            <a class="navbar-brand" href="/"><img src="/imgs/utm.png" height="50" width="210 " alt="About Us"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/catalogo">Catálogo</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/ebook">Ebooks</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/informacion">Información</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/iniciosesion">Iniciar sesión</a>
-                    </li>
-                    <div class="group">
-                        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
-                            <g>
-                                <path
-                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
-                                </path>
-                            </g>
-                        </svg>
-                        <input placeholder="Buscar" type="search" class="input">
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </nav><!-- End of Page Navbar -->
+<%- include('../views/elements/header_nav.ejs'); %><!-- End of Page Navbar -->
 
     <!-- section CATÁLOGO -->
     <section>
         <!-- Container -->
-        <div class="container">
+       <div class="container">
             <div class="card-deck mt-3">
                 <div class="container text-center">
                 </div>
-            <div class="card-deck mt-3">
-                <div class="container text-center">
-                    <h1>Catalogo</h1>
-                </div>
-                <div class="shell">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="wsk-cp-product">
-                                    <div class="wsk-cp-img">
-                                        <img src="/imgs/libro11.jfif" alt="Product" class="img-responsive" />
+                <div class="card-deck mt-3">
+                    <div class="container text-center">
+                        <h1>Catálogo</h1>
+                    </div>
+                    <div class="shell">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="wsk-cp-product">
+                                        <div class="wsk-cp-img">
+                                            <img src="https://www.gandhi.com.mx/media/catalog/product/9/7/9789587627206.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=478&width=300&canvas=300:478"
+                                                alt="Product" class="img-responsive" />
+                                        </div>
+                                        <div class="wsk-cp-text">
+                                            <div class="category">
+                                                <span class="btn-leer" onclick=go href="../public_html/ebook.html">Leer
+                                                    más</span>
+                                            </div>
+                                            <div class="title-product">
+                                                <h3>Lógica De Programación</h3>
+                                            </div>
+                                            <div class="description-prod">
+                                                <p>Muchas personas confunden la Programación con la Lógica
+                                                    de Programación. La primera involucra el conocimiento de técnicas e
+                                                    instrucciones de un determinado lenguaje
+                                                    a través de los cuales se hace sencillo lograr que el computador
+                                                    obtenga unos resultados
+                                                    mucho más rápido que nosotros.</p>
+                                            </div>
+                                            <p>Autor:Omar Iván Trejos Buritica </p>
+                                            <p>Año: 2000</p>
+                                            <div class="card-footer">
+                                                
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="wsk-cp-text">
-                                        <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="wsk-cp-product">
+                                        <div class="wsk-cp-img">
+                                            <img src="https://anayamultimedia.es/imagenes/libros/grande/9788441543539-introduccion-a-la-programacion.jpg"
+                                                alt="Product" class="img-responsive" />
                                         </div>
-                                        <div class="title-product">
-                                            <h3>My face not my heart</h3>
+                                        <div class="wsk-cp-text">
+                                            <div class="category">
+                                                <span class="btn-leer"
+                                                    onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
+                                                    más</span>
+                                            </div>
+                                            <div class="title-product">
+                                                <h3>Introducción a la programación</h3>
+                                            </div>
+                                            <div class="description-prod">
+                                                <p>Vivimos rodeados de dispositivos 'inteligentes' que se caracterizan
+                                                    por ser, en mayor o menor medida, programables.</p>
+                                            </div>
+                                            <p>Autor: Francisco Charte</p>
+                                            <p>Año: 1999</p>
+                                            <div class="card-footer">
+                                            </div>
                                         </div>
-                                        <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="wsk-cp-product">
+                                        <div class="wsk-cp-img">
+                                            <img src="https://www.elsotano.com/imagenes_grandes/9789587/978958792268.JPG"
+                                                alt="Product" class="img-responsive" />
                                         </div>
-                                        <div class="card-footer">
+                                        <div class="wsk-cp-text">
+                                            <div class="category">
+                                                <span class="btn-leer"
+                                                    onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
+                                                    más</span>
+                                            </div>
+                                            <div class="title-product">
+                                                <h3>Lógica De Programación. Solucionario En Pseudocódigo</h3>
+                                            </div>
+                                            <div class="description-prod">
+                                                <p>En este libro usted encontrará soluciones posibles escritas en
+                                                    seudocódigo, según los estándares
+                                                    utilizados en mi libro Lógica de programación, y de forma que se
+                                                    pueda fomentar el desarrollo de
+                                                    la lógica que se utiliza en la programación de computadores desde
+                                                    una perspectiva general sin
+                                                    estar atada a ningún tipo de lenguaje de programación específico.
+                                                </p>
+                                            </div>
+                                            <p>Autor: Trejos Buritica, Omar Ivan</p>
+                                            <p>Año: 2021 </p>
+                                            <div class="card-footer">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="wsk-cp-product">
+                                        <div class="wsk-cp-img">
+                                            <img src="https://www.publicacionesupec.org/public/presses/1/submission_64_63_coverImage_es_ES_t.jpg"
+                                                alt="Product" class="img-responsive" />
+                                        </div>
+                                        <div class="wsk-cp-text">
+                                            <div class="category">
+                                                <span class="btn-leer"
+                                                    onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
+                                                    más</span>
+                                            </div>
+                                            <div class="title-product">
+                                                <h3>Fundamentos de programación utilizando PSeInt</h3>
+                                            </div>
+                                            <div class="description-prod">
+                                                <p>La presente obra está dirigida a estudiantes y profesionales de
+                                                    informática o áreas afines.
+                                                    Su objetivo es proporcionar una guía teórica y práctica de fácil uso
+                                                    y, a su vez, rigurosa
+                                                    en la programación de computadoras.</p>
+                                            </div>
+                                            <p>Autor: Iván García Santillán </p>
+                                            <p>Año: 2014</p>
+                                            <div class="card-footer">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="wsk-cp-product">
-                                    <div class="wsk-cp-img">
-                                        <img src="/imgs/libro12.jfif" alt="Product" class="img-responsive" />
-                                    </div>
-                                    <div class="wsk-cp-text">
-                                        <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
+                        </div>
+                    </div>
+                    <div class="shell">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="wsk-cp-product">
+                                        <div class="wsk-cp-img">
+                                            <img src="https://libreriapensar.com/wp-content/uploads/2020/04/products-1637.jpg" alt="Product" class="img-responsive" />
                                         </div>
-                                        <div class="title-product">
-                                            <h3>My face not my heart</h3>
-                                        </div>
-                                        <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
-                                        </div>
-                                        <div class="card-footer">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="wsk-cp-product">
-                                    <div class="wsk-cp-img">
-                                        <img src="/imgs/libro13.gif" alt="Product" class="img-responsive" />
-                                    </div>
-                                    <div class="wsk-cp-text">
-                                        <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
-                                        </div>
-                                        <div class="title-product">
-                                            <h3>My face not my heart</h3>
-                                        </div>
-                                        <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
-                                        </div>
-                                        <div class="card-footer">
+                                        <div class="wsk-cp-text">
+                                            <div class="category">
+                                                <span class="btn-leer"
+                                                    onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
+                                                    más</span>
+                                            </div>
+                                            <div class="title-product">
+                                                <h3>Mecatrónica Sistemas De Control Electrónico En La Ingeniería Mecánica Y Eléctrica 5ta Edición</h3>
+                                            </div>
+                                            <div class="description-prod">
+                                                <p>Es un texto moderno con el enfoque multidisciplinario de la ingeniería, para una mejor comprensión y diseño de sistemas 
+                                                    mecatrónicos, dadas las necesidades actuales de las ingeniería mecatrónica, robótica, electrónica, sistemas, eléctrica, 
+                                                    industrial, computación e informática, ingeniería de diseño y automatización electrónica.</p>
+                                            </div>
+                                            <p>Autor: William Bolton </p>
+                                            <p>Año: 2013</p>
+                                            <div class="card-footer">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="wsk-cp-product">
-                                    <div class="wsk-cp-img">
-                                        <img src="/imgs/libro14.jfif" alt="Product" class="img-responsive" />
+                                <div class="col-md-3">
+                                    <div class="wsk-cp-product">
+                                        <div class="wsk-cp-img">
+                                            <img src="https://m.media-amazon.com/images/I/51bOo9r4RJL._SX379_BO1,204,203,200_.jpg" alt="Product" class="img-responsive" />
+                                        </div>
+                                        <div class="wsk-cp-text">
+                                            <div class="category">
+                                                <span class="btn-leer"
+                                                    onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
+                                                    más</span>
+                                            </div>
+                                            <div class="title-product">
+                                                <h3>Mantenimiento. Técnicas y aplicaciones industriales</h3>
+                                            </div>
+                                            <div class="description-prod">
+                                                <p>Texto de fácil lectura y comprensión que busca contribuir al aprendizaje significativo del arte del mantenimiento 
+                                                    industrial, apoyándose en modelos aplicados a nivel industrial. </p>
+                                            </div> 
+                                            <p>Autor: González, Víctor</p>
+                                            <p>Año: 2017</p>
+                                            <div class="card-footer">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="wsk-cp-text">
-                                        <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="wsk-cp-product">
+                                        <div class="wsk-cp-img">
+                                            <img src="https://m.media-amazon.com/images/I/51Bj-Cl0ULL._SX258_BO1,204,203,200_QL70_ML2_.jpg" alt="Product" class="img-responsive" />
                                         </div>
-                                        <div class="title-product">
-                                            <h3>My face not my heart</h3>
+                                        <div class="wsk-cp-text">
+                                            <div class="category">
+                                                <span class="btn-leer"
+                                                    onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
+                                                    más</span>
+                                            </div>
+                                            <div class="title-product">
+                                                <h3>Cocinología: La Ciencia de Cocinar</h3>
+                                            </div>
+                                            <div class="description-prod">
+                                                <p>¡Utiliza la ciencia y cocina como un chef! Descubre que no hace falta marinar la carne toda la noche, que tener en remojo las 
+                                                    especias las hace más aromáticas, que los frutas secos se tuestan mejor en el microondas y que la sal te ayuda a lograr huevos 
+                                                    escalfados perfectos.</p>
+                                            </div>
+                                            <p>Autor: </p>
+                                            <p>Año: </p>
+                                            <div class="card-footer">
+                                            </div>
                                         </div>
-                                        <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="wsk-cp-product">
+                                        <div class="wsk-cp-img">
+                                            <img src="https://m.media-amazon.com/images/I/412voPXrILL._SX331_BO1,204,203,200_.jpg" alt="Product" class="img-responsive" />
                                         </div>
-                                        <div class="card-footer">
+                                        <div class="wsk-cp-text">
+                                            <div class="category">
+                                                <span class="btn-leer"
+                                                    onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
+                                                    más</span>
+                                            </div>
+                                            <div class="title-product">
+                                                <h3>Biotecnología Historia, Aplicaciones e Impacto</h3>
+                                            </div>
+                                            <div class="description-prod">
+                                                <p>Cuando se habla de Biotecnología frecuentemente se hace referencia a procesos que involucran técnicas de Ingeniería Genética,
+                                                     como la transgénesis. 
+                                                </p>
+                                            </div>
+                                            <p>Autor: </p>
+                                            <p>Año: </p>
+                                            <div class="card-footer">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -170,177 +247,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="shell">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="wsk-cp-product">
-                                    <div class="wsk-cp-img">
-                                        <img src="/imgs/libro11.jfif" alt="Product" class="img-responsive" />
-                                    </div>
-                                    <div class="wsk-cp-text">
-                                        <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
-                                        </div>
-                                        <div class="title-product">
-                                            <h3>My face not my heart</h3>
-                                        </div>
-                                        <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
-                                        </div>
-                                        <div class="card-footer">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="wsk-cp-product">
-                                    <div class="wsk-cp-img">
-                                        <img src="/imgs/libro12.jfif" alt="Product" class="img-responsive" />
-                                    </div>
-                                    <div class="wsk-cp-text">
-                                        <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
-                                        </div>
-                                        <div class="title-product">
-                                            <h3>My face not my heart</h3>
-                                        </div>
-                                        <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
-                                        </div>
-                                        <div class="card-footer">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="wsk-cp-product">
-                                    <div class="wsk-cp-img">
-                                        <img src="/imgs/libro13.gif" alt="Product" class="img-responsive" />
-                                    </div>
-                                    <div class="wsk-cp-text">
-                                        <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
-                                        </div>
-                                        <div class="title-product">
-                                            <h3>My face not my heart</h3>
-                                        </div>
-                                        <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
-                                        </div>
-                                        <div class="card-footer">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="wsk-cp-product">
-                                    <div class="wsk-cp-img">
-                                        <img src="/imgs/libro14.jfif" alt="Product" class="img-responsive" />
-                                    </div>
-                                    <div class="wsk-cp-text">
-                                        <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
-                                        </div>
-                                        <div class="title-product">
-                                            <h3>My face not my heart</h3>
-                                        </div>
-                                        <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
-                                        </div>
-                                        <div class="card-footer">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End of Container -->
+                <!-- End of Container -->
     </section><!-- End of Section -->
 
 
     <!-- Section -->
-    <section class="pb-0">
-        <!-- Container -->
-        <div class="container">
-            <!-- Pre footer -->
-            <div class="pre-footer">
-                <ul class="list">
-                    <li class="list-head">
-                        <h6 class="font-weight-bold">ABOUT US</h6>
-                    </li>
-                    <li class="list-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nobis fugit maxime deleniti
-                            minus optio accusamus, quam maiores explicabo sunt.</p>
-                        <a href="#"><strong class="text-primary">Creative</strong> <span
-                                class="text-dark">Design</span></a>
-                    </li>
-                </ul>
-                <ul class="list">
-                    <li class="list-head">
-                        <h6 class="font-weight-bold">USEFUL LINKS</h6>
-                    </li>
-                    <li class="list-body">
-                        <div class="row">
-                            <div class="col">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
-                                <a href="#">Link 4</a>
-                            </div>
-                            <div class="col">
-                                <a href="#">Link 5</a>
-                                <a href="#">Link 6</a>
-                                <a href="#">Link 7</a>
-                                <a href="#">Link 8</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="list">
-                    <li class="list-head">
-                        <h6 class="font-weight-bold">CONTACT INFO</h6>
-                    </li>
-                    <li class="list-body">
-                        <p>Contact us and we'll get back to you within 24 hours.</p>
-                        <p><i class="ti-location-pin"></i> 12345 Fake ST NoWhere AB Country</p>
-                        <p><i class="ti-email"></i> info@website.com</p>
-                        <div class="social-links">
-                            <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
-                            <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
-                            <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
-                            <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
-                            <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
-                            <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
-                        </div>
-                    </li>
-                </ul>
-            </div><!-- End of Pre footer -->
-
-            <!-- foooter -->
-            <footer class="footer">
-                <p>Copyright
-                    <script>document.write(new Date().getFullYear())</script> &copy; <a
-                        href="http://www.devcrud.com">DevCRUD</a>
-                </p>
-            </footer><!-- End of Footer-->
-
-        </div><!--End of Container -->
-    </section><!-- End of Section -->
+    <%- include('../views/elements/footer.ejs'); %>
+    <!-- End of Section -->
 
     <!-- core  -->
     <script src="/vendors/jquery/jquery-3.4.1.js"></script>

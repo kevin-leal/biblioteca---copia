@@ -1,65 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Creative Design landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Universidad Tecnológica de Morelia</title>
-
-    <!-- font icons -->
-    <link rel="stylesheet" href="/vendors/themify-icons/css/themify-icons.css">
-
-    <!-- Bootstrap + Creative Design main styles -->
-    <link rel="stylesheet" href="/css/creative-design.css">
-
-</head>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-
-    <!-- Page Navbar -->
-    <nav id="scrollspy" class="navbar page-navbar navbar-light navbar-expand-md fixed-top" data-spy="affix"
-        data-offset-top="20">
-        <div class="container">
-
-            <a class="navbar-brand" href="/"><img src="/imgs/utm.png" height="50" width="210 " alt="About Us"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/catalogo">Catálogo</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/ebook">Ebooks</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/informacion">Información  </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/iniciosesion">Iniciar sesión</a>
-                    </li>
-                    <div class="group">
-                        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
-                            <g>
-                                <path
-                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
-                                </path>
-                            </g>
-                        </svg>
-                        <input placeholder="Buscar" type="search" class="input">
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </nav><!-- End of Page Navbar -->
+<%- include('../views/elements/header_nav.ejs'); %><!-- End of Page Navbar -->
 
     <!-- section CATÁLOGO -->
     <section>
@@ -70,202 +12,213 @@
                 </div>
             <div class="card-deck mt-3">
                 <div class="container text-center">
-                    <h1>Informacion</h1>
+                    <h1>CENTRO DE INFORMACIÓN Y DOCUMENTACIÓN</h1>
                 </div>
+
+
                 <div class="shell">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="wsk-cp-product">
-                                    <div class="wsk-cp-img">
-                                        <img src="/imgs/libro11.jfif" alt="Product" class="img-responsive" />
-                                    </div>
-                                    <div class="wsk-cp-text">
-                                        <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
-                                        </div>
-                                        <div class="title-product">
-                                            <h3>My face not my heart</h3>
-                                        </div>
-                                        <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
-                                        </div>
-                                        <div class="card-footer">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="wsk-cp-product">
-                                    <div class="wsk-cp-img">
-                                        <img src="/imgs/libro12.jfif" alt="Product" class="img-responsive" />
-                                    </div>
-                                    <div class="wsk-cp-text">
-                                        <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
-                                        </div>
-                                        <div class="title-product">
-                                            <h3>My face not my heart</h3>
-                                        </div>
-                                        <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
-                                        </div>
-                                        <div class="card-footer">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="wsk-cp-product">
-                                    <div class="wsk-cp-img">
-                                        <img src="/imgs/libro13.gif" alt="Product" class="img-responsive" />
-                                    </div>
-                                    <div class="wsk-cp-text">
-                                        <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
-                                        </div>
-                                        <div class="title-product">
-                                            <h3>My face not my heart</h3>
-                                        </div>
-                                        <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
-                                        </div>
-                                        <div class="card-footer">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="wsk-cp-product">
-                                    <div class="wsk-cp-img">
-                                        <img src="/imgs/libro14.jfif" alt="Product" class="img-responsive" />
-                                    </div>
-                                    <div class="wsk-cp-text">
-                                        <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
-                                        </div>
-                                        <div class="title-product">
-                                            <h3>My face not my heart</h3>
-                                        </div>
-                                        <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
-                                        </div>
-                                        <div class="card-footer">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                    <!-- Introduccion biblioteca wrapper -->
+            <div class="about-wrapper">
+    
+                <div class="content">
+                    
+                    <!-- row -->
+                    <div class="row">
+                        <div class="text-align">
+                            <p>LOS BENEFICIARIOS DE LOS SERVICIOS PROPORCIONADOS POR EL CENTRO DE INFORMACIÓN SERÁN: ALUMNOS, PERSONAL DOCENTE, ADMINISTRATIVO Y PUBLICO EN GENERAL.</p>
+                            <p>EL CENTRO DE INFORMACIÓN Y DOCUMENTACIÓN (CD) FUNCIONA CON EL SISTEMA DE ESTANTERÍA ABIERTA.</p>
+                            <p>EL USUARIO</p>
+                            <p>1.     INTERNO: SE REGISTRARÁ CON LA CREDENCIAL DE LA INSTITUCIÓN VIGENTE.</p>
+                            <p>2.     EXTERNO: SE IDENTIFICARÁ MEDIANTE LA CREDENCIAL DE ELECTOR VIGENTE.</p>
                         </div>
+        
+                    </div><!-- End of Row -->
+                </div>
+            </div><!-- End of About Wrapper -->
+                   
                     </div>
                 </div>
+
                 <div class="shell">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="wsk-cp-product">
-                                    <div class="wsk-cp-img">
-                                        <img src="/imgs/libro11.jfif" alt="Product" class="img-responsive" />
-                                    </div>
-                                    <div class="wsk-cp-text">
-                                        <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
-                                        </div>
-                                        <div class="title-product">
-                                            <h3>My face not my heart</h3>
-                                        </div>
-                                        <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
-                                        </div>
-                                        <div class="card-footer">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="wsk-cp-product">
-                                    <div class="wsk-cp-img">
-                                        <img src="/imgs/libro12.jfif" alt="Product" class="img-responsive" />
-                                    </div>
-                                    <div class="wsk-cp-text">
-                                        <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
-                                        </div>
-                                        <div class="title-product">
-                                            <h3>My face not my heart</h3>
-                                        </div>
-                                        <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
-                                        </div>
-                                        <div class="card-footer">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="wsk-cp-product">
-                                    <div class="wsk-cp-img">
-                                        <img src="/imgs/libro13.gif" alt="Product" class="img-responsive" />
-                                    </div>
-                                    <div class="wsk-cp-text">
-                                        <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
-                                        </div>
-                                        <div class="title-product">
-                                            <h3>My face not my heart</h3>
-                                        </div>
-                                        <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
-                                        </div>
-                                        <div class="card-footer">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="wsk-cp-product">
-                                    <div class="wsk-cp-img">
-                                        <img src="/imgs/libro14.jfif" alt="Product" class="img-responsive" />
-                                    </div>
-                                    <div class="wsk-cp-text">
-                                        <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
-                                        </div>
-                                        <div class="title-product">
-                                            <h3>My face not my heart</h3>
-                                        </div>
-                                        <div class="description-prod">
-                                            <p>Description Product tell me how to change playlist height size like 600px
-                                                in html5 player. player good work now check this link</p>
-                                        </div>
-                                        <div class="card-footer">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                    <!-- Prestamo wrapper -->
+            <div class="about-wrapper">
+                <div class="after">
+                    <h1> Préstamos </h1>
+                </div>
+                <div class="content">
+                    <h5 class="title mb-3">PRÉSTAMOS</h5>
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col">
+                            <p>CON EL FIN DE CONTAR CON UN MEJOR SERVICIO, EL USUARIO SE RESPONSABILIZA DEL MATERIAL QUE LE SEA PROPORCIONADO PARA CONSULTA BAJO CUALQUIER TIPO DE PRÉSTAMO Y RESPETAR LAS FECHAS QUE SE ESTABLEZCAN PARA SU DEVOLUCIÓN.</p>
+                            <p>1.	PRÉSTAMO A DOMICILIO: ESTE SERVICIO FUNCIONA ÚNICA Y EXCLUSIVAMENTE PARA EL ALUMNO, DOCENTE Y ADMINISTRATIVO, PUDIENDO OBTENER 3 EJEMPLARES DE TÍTULO DIFERENTE CON UN PERIODO DE 3 DÍAS COMO MÁXIMO.</p>
+                            <p>2.	NO SE PODRÁ PRESTAR UN LIBRO, SI SOLO EXISTE UN EJEMPLAR DEL MISMO.</p>
+
                         </div>
+                        <div class="col">
+                            <p>3.	EL PRÉSTAMO ES INTRANSFERIBLE Y LA PERSONA QUE FIRME EL COMPROBANTE SE HARÁ RESPONSABLE DEL BUEN USO DEL EJEMPLAR Y DE LA DEVOLUCIÓN A TIEMPO.</p>
+                            <p>4.	LAS OBRAS DE CONSULTA COMO: ENCICLOPEDIAS, DICCIONARIOS, TESIS, MATERIAL AUDIOVISUAL, AUDIOCASETES, DISCOS COMPACTOS, MATERIAL DE RESERVA NO ESTÁ SUJETO A PRÉSTAMO A DOMICILIO.</p>
+
+                        </div>
+                    </div><!-- End of Row -->
+                </div>
+            </div><!-- End of About Wrapper -->
+                   
+                    </div>
+                </div>
+
+                <div class="shell">
+                    <div class="container">
+                                    <!-- Control de servicio wrapper -->
+            <div class="about-wrapper">
+                <div class="after">
+                    <h1> Servicios </h1>
+                </div>
+                <div class="content">
+                    <h5 class="title mb-3">CONTROL DE SERVICIO</h5>
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col">
+                            <p>1.	EL CID CONTIENE COMO OBJETIVO CONTRIBUIR A PRESERVAR EL MOBILIARIO, EQUIPO Y SERVICIOS DEL CENTRO Y SUJETARSE A LOS MECANISMOS DE CONTROL, SEGURIDAD Y VIGILANCIA QUE SE ESTABLEZCAN.</p>
+                            <p>2.	EL USUARIO DEBER AGUARDAR RESPETO Y CONSIDERACIÓN A LOS DEMÁS USUARIOS Y AL PERSONAL DEL CENTRO DE INFORMACIÓN.</p>
+
+                        </div>
+                        <div class="col">
+                            <p>3.	EVITARÁ HABLAR EN VOZ ALTA O FORMAR GRUPOS QUE ALTEREN EL ORDEN.</p>
+                            <p>4.	QUEDA PROHIBIDO DENTRO DE LAS INSTALACIONES FUMAR, INGERIR CUALQUIER TIPO DE BEBIDA O ALIMENTO.</p>
+
+                        </div>
+                    </div><!-- End of Row -->
+                </div>
+            </div><!-- End of About Wrapper -->
+                   
+                    </div>
+                </div>
+
+                <div class="shell">
+                    <div class="container">
+                                    <!-- Consulta electronica wrapper -->
+            <div class="about-wrapper">
+                <div class="after">
+                    <h1> Consulta </h1>
+                </div>
+                <div class="content">
+                    <h5 class="title mb-3">SALA DE CONSULTA ELECTRÓNICA</h5>
+                    <!-- row -->
+                    <div class="row">
+                        <p>EL SERVICIO DE INTERNET NO TIENE COSTO ALGUNO PARA ALUMNO, ADMINISTRATIVO Y DOCENTE.</p>
+                        <p>1.	NO DEBERÁ ESTAR MÁS DE 1 PERSONA POR MÁQUINA.</p>
+                        <p>2.	EL USO DEL SERVICIO DE LAS MAQUINAS, TANTO PARA INTERNET COMO PARA OTRO PROGRAMA ES DE 30 MINUTOS Y POR RESPETO A LOS DEMÁS USUARIOS DEBERÁ RESPETAR DICHO TÉRMINO BAJO RIESGO DE SUFRIR ALGUNA SANCIÓN.</p>
+
+                    </div><!-- End of Row -->
+                
+                </div>
+            </div><!-- End of About Wrapper -->
+
+            <div class="shell">
+                <div class="container">
+                                <!-- Sanciones wrapper -->
+        <div class="about-wrapper">
+            <div class="after">
+                <h1> Sanción </h1>
+            </div>
+            <div class="content">
+                <h5 class="title mb-3">SANCIONES</h5>
+                <!-- row -->
+                <div class="row">
+                    <div class="col">
+                        <p>1.	EL USUARIO QUE MALTRATE CUALQUIER MATERIAL PROPIEDAD DEL CENTRO, SE LE SANCIONARA CON EL PAGO DEL COSTO ACTUAL DEL MISMO.</p>
+                        <p>2.	A LA PERSONA QUE PIERDA CUALQUIER MATERIAL DEBERÁ DE CUBRIR EL IMPORTE DEL MISMO EN UN PLAZO NO MAYOR DE 15 DÍAS NATURALES.</p>
+                        <p>3.	EL USUARIO INTERNO QUE NO CUBRA SU ADEUDO NO TENDRÁ DERECHO A EXÁMENES ORDINARIOS, FINALES O EXTRAORDINARIOS. ADEMÁS, CUBRIRÁ UNA CUOTA DE $5.00 PESOS POR CADA DÍA DE RETRASO, EL CUAL SERÁ PAGADO EN CAJA.</p>
+                    </div>
+                    <div class="col">
+                        <p>4.	EL USUARIO PODRÁ SER SUSPENDIDO DEFINITIVAMENTE EN CASO DE:</p>
+                        <p>•	QUE INCURRA EN FALTAS AL REGLAMENTO.</p>
+                        <p>•	ENTREGUE EL MATERIAL MUTILADO.</p>
+                        <p>•	SUSTRAIGA EL MATERIAL DEL CENTRO SIN HABER REALIZADO EL TRÁMITE.</p>
+                        <p>•	AGREDA FÍSICA O VERBALMENTE AL PERSONAL DEL CENTRO.</p>
+
+                    </div>
+                </div><!-- End of Row -->
+            </div>
+        </div><!-- End of About Wrapper -->
+               
+                </div>
+            </div>
+
+
+            <div class="shell">
+                <div class="container">
+                                <!-- Reglamento biblioteca wrapper -->
+        <div class="about-wrapper">
+            <div class="after">
+                <h1> Las reglas </h1>
+            </div>
+            <div class="content">
+                <h5 class="title mb-3">REGLAMENTO DE LA BIBLIOTECA</h5>
+                <!-- row -->
+                <div class="row">
+                    <div class="col">
+                        <p>AL ENTRAR DEBERÁN ENTREGAR LA CREDENCIAL VIGENTE A LAS PERSONAS ENCARGADAS DEL CENTRO DE INFORMACIÓN (CID), ASÍ COMO TAMBIÉN ENTREGARÁN LAS MOCHILAS EN EL MOSTRADOR Y OBTENER EL NÚMERO DE GUARDAOBJETOS QUE DEVOLVERÁ AL TÉRMINO DEL SERVICIO.</p>
+                        <p>PRÉSTAMO INTERNO. ESTE SERVICIO FUNCIONARÁ CON EL SISTEMA DE ESTANTERÍA ABIERTA, Y POSTERIORMENTE DEPOSITAR EL MATERIAL CONSULTADO EN EL LUGAR QUE LE INDIQUE EL ENCARGADO DEL CID.</p>
+                        <p>PRÉSTAMO DE LIBROS. EL CUAL SERÁ MÁXIMO DE 3 EJEMPLARES DIFERENTES Y POR UN PERIODO DE 3 DÍAS COMO MÁXIMO.</p>
+                        <p>LAS OBRAS, TESIS, MATERIAL, AUDIOVISUAL, AUDIOCASETES, DISCOS COMPACTOS, OBRAS AGOTADAS, SON MATERIALES NO SUJETOS A PRÉSTAMOS A DOMICILIO.</p>
+                        <p>LOS USUARIOS EXTERNOS DEBERÁN IDENTIFICARSE MEDIANTE SU CREDENCIAL DE ELECTOR VIGENTE.</p>
+                        <p>LOS PRÉSTAMOS SON INTRANSFERIBLES Y LA PERSONA QUE FIRME EL COMPROBANTE SE HARÁ RESPONSABLE DEL BUEN USO DEL EJEMPLAR Y DE LA DEVOLUCIÓN A TIEMPO.</p>
+                        <p>RESPONSABILIZARSE DEL MATERIAL Y LOS ACERVOS QUE LE SEAN PROPORCIONADOS PARA CONSULTA BAJO CUALQUIER TIPO DE PRÉSTAMO Y RESPETAR LAS FECHAS QUE SE ESTABLEZCAN PARA SU DEVOLUCIÓN.</p>
+                        <p>CONTRIBUIR A PRESERVAR EL MOBILIARIO, EQUIPO Y ACERVOS DEL CENTRO Y SUJETARSE A LOS MECANISMOS DE CONTROL, SEGURIDAD Y VIGILANCIA QUE SE ESTABLEZCAN.</p>
+                        <p>GUARDAR RESPETO Y CONSIDERACIÓN A LOS DEMÁS USUARIOS AL PERSONAL DEL CENTRO DE INFORMACIÓN.</p>
+                        <p>EVITAR HABLAR EN VOZ ALTA O FORMAR GRUPOS QUE ALTEREN EL ORDEN.</p>
+                        <p>NO DEBERÁN ESTAR MÁS DE 2 PERSONAS EN UNA MÁQUINA.</p>
+                    </div>
+                    <div class="col">
+                        <p>ESTÁ PROHIBIDO EN EL CENTRO, INGERIR CUALQUIER BEBIDA, ALIMENTO Y FUMAR.</p>
+                        <p>EL USUARIO QUE MALTRATE CUALQUIER MATERIAL PROPIEDAD DEL CENTRO, SE LE SANCIONARA CON EL PAGO DEL COSTO ACTUAL DEL MISMO.</p>
+                        <p>LA PERSONA QUE PIERDA CUALQUIER MATERIAL, DEBERÁ DE CUBRIR EL IMPORTE DEL MISMO EN UN PLAZO NO MAYOR DE 15 DÍAS NATURALES.</p>
+                        <p>EL USUARIO INTERNO QUE NO CUBRA SU ADEUDO NO TENDRÁ DERECHO A EXÁMENES ORDINARIOS, FINALES O EXTRAORDINARIOS. ADEMÁS, CUBRIRÁ UNA CUOTA POR CADA DÍA DE RETRASO, POR LO QUE SERÁ SEÑALADA POR EL DEPARTAMENTO DE SERVICIOS ESCOLARES.</p>
+                        <p>EL USUARIO PODRÁ SER SUSPENDIDO DEFINITIVAMENTE EN CASO DE:</p>
+                        <ol>
+                            <li>ACUMULE TRES SUSPENSIONES DURANTE UN CUATRIMESTRE.</li>
+                            <li>ENTREGUE MATERIAL MUTILADO.</li>
+                            <li>SUSTRAIGA EL MATERIAL DEL CENTRO SIN HABER REALIZADO EL TRÁMITE.</li>
+                            <li>AGREDA FÍSICA O VERBALMENTE AL PERSONAL DEL CENTRO.</li>
+                        </ol>
+                        <p>EL USO DEL SERVICIO DE LAS MAQUINAS, TANTO PARA INTERNET COMO PARA OTRO PROGRAMA ES DE 30 MINUTOS. A LA PERSONA QUE NO CUMPLA, SE LE RECOGERÁ LA CREDENCIAL DURANTE 3 DÍAS, POR LO QUE NO PODRÁ HACER USO DE LOS SERVICIOS DE LA BIBLIOTECA.</p>
+                        <p>PARA ESTABLECER EL MEJOR APROVECHAMIENTO DE LOS RECURSOS BIBLIOTECARIOS DISPONIBLES, Y SALVAGUARDAR EL PATRIMONIO UNIVERSITARIO; SE DEBERÁ RESPETAR CUALQUIER OTRA DISPOSICIÓN QUE EL DEPARTAMENTO DE SERVICIOS ESCOLARES O EL CENTRO DE INFORMACIÓN CONSIDERE PERTINENTE.</p>
+
+                    </div>
+                </div><!-- End of Row -->
+            </div>
+        </div><!-- End of About Wrapper -->
+               
+                </div>
+            </div>
+
+
+            <div class="shell">
+                <div class="container">
+                                <!-- Aclaracion biblioteca wrapper -->
+        <div class="about-wrapper">
+
+            <div class="content">
+                
+                <!-- row -->
+                <div class="row">
+                    <p >PARA ESTABLECER EL MEJOR APROVECHAMIENTO DE LOS RECURSOS BIBLIOTECARIOS DISPONIBLES, Y SALVAGUARDAR EL PATRIMONIO UNIVERSITARIO; SE DEBERÁ RESPETAR CUALQUIER OTRA DISPOSICIÓN QUE EL DEPARTAMENTO DE SERVICIOS ESCOLARES O EL CENTRO DE INFORMACIÓN CONSIDERE PERTINENTE.</p>
+                </div><!-- End of Row -->
+            </div>
+        </div><!-- End of About Wrapper -->
+               
+                </div>
+            </div>
+
+
+
+
+
+                       
                     </div>
                 </div>
             </div>
@@ -274,73 +227,8 @@
 
 
     <!-- Section -->
-    <section class="pb-0">
-        <!-- Container -->
-        <div class="container">
-            <!-- Pre footer -->
-            <div class="pre-footer">
-                <ul class="list">
-                    <li class="list-head">
-                        <h6 class="font-weight-bold">ABOUT US</h6>
-                    </li>
-                    <li class="list-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nobis fugit maxime deleniti
-                            minus optio accusamus, quam maiores explicabo sunt.</p>
-                        <a href="#"><strong class="text-primary">Creative</strong> <span
-                                class="text-dark">Design</span></a>
-                    </li>
-                </ul>
-                <ul class="list">
-                    <li class="list-head">
-                        <h6 class="font-weight-bold">USEFUL LINKS</h6>
-                    </li>
-                    <li class="list-body">
-                        <div class="row">
-                            <div class="col">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
-                                <a href="#">Link 4</a>
-                            </div>
-                            <div class="col">
-                                <a href="#">Link 5</a>
-                                <a href="#">Link 6</a>
-                                <a href="#">Link 7</a>
-                                <a href="#">Link 8</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="list">
-                    <li class="list-head">
-                        <h6 class="font-weight-bold">CONTACT INFOa</h6>
-                    </li>
-                    <li class="list-body">
-                        <p>Contact us and we'll get back to you within 24 hours.</p>
-                        <p><i class="ti-location-pin"></i> 12345 Fake ST NoWhere AB Country</p>
-                        <p><i class="ti-email"></i> info@website.com</p>
-                        <div class="social-links">
-                            <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
-                            <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
-                            <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
-                            <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
-                            <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
-                            <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
-                        </div>
-                    </li>
-                </ul>
-            </div><!-- End of Pre footer -->
-
-            <!-- foooter -->
-            <footer class="footer">
-                <p>Copyright
-                    <script>document.write(new Date().getFullYear())</script> &copy; <a
-                        href="http://www.devcrud.com">DevCRUD</a>
-                </p>
-            </footer><!-- End of Footer-->
-
-        </div><!--End of Container -->
-    </section><!-- End of Section -->
+    <%- include('../views/elements/footer.ejs'); %>
+    <!-- End of Section -->
 
     <!-- core  -->
     <script src="/vendors/jquery/jquery-3.4.1.js"></script>
