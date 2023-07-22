@@ -2,6 +2,9 @@
 <html lang="en">
 
 <%- include('../views/elements/header_nav.ejs'); %>
+<%- include('../views/elements/libro.ejs'); %>
+<%- include('../views/elements/libro_ebook.ejs'); %>
+
     <!-- About Section -->
     <section id="about">
         <!-- Container -->
@@ -49,9 +52,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick= go href="../public_html/ebook.html">Leer
-                                                más</span>
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img1,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer más</span>
                                         </div>
                                         <div class="title-product">
                                             <h3>Lógica De Programación</h3>
@@ -74,9 +75,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img2,'Titulo del Libro 2', 'Autor 2', 'Editorial 2', 'Fecha de Publicación 2', 'Descripción del Libro 2')">Leer más</span>
                                         </div>
                                         <div class="title-product">
                                             <h3>Introducción a la programación</h3>
@@ -97,9 +96,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img3,'Titulo del Libro 3', 'Autor 3', 'Editorial 3', 'Fecha de Publicación 3', 'Descripción del Libro 3')">Leer más</span>
                                         </div>
                                         <div class="title-product">
                                             <h3>Lógica De Programación. Solucionario En Pseudocódigo</h3>
@@ -122,9 +119,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img4,'Titulo del Libro 4', 'Autor 4', 'Editorial 4', 'Fecha de Publicación 4', 'Descripción del Libro 4')">Leer más</span>
                                         </div>
                                         <div class="title-product">
                                             <h3>Fundamentos de programación utilizando PSeInt</h3>
@@ -162,9 +157,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModalEbook(imgE1,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer más</span>
                                         </div>
                                         <div class="title-product">
                                             <h3>Cocina vegana creativa</h3>
@@ -186,9 +179,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModalEbook(imgE2,'Titulo del Libro 2', 'Autor 2', 'Editorial 2', 'Fecha de Publicación 2', 'Descripción del Libro 2')">Leer más</span>
                                         </div>
                                         <div class="title-product">
                                             <h3>Manual de Energías Renovables</h3>
@@ -210,9 +201,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModalEbook(imgE3,'Titulo del Libro 3', 'Autor 3', 'Editorial 3', 'Fecha de Publicación 3', 'Descripción del Libro 3')">Leer más</span>
                                         </div>
                                         <div class="title-product">
                                             <h3>Diseño textil: Tejidos y técnicas</h3>
@@ -234,9 +223,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModalEbook(imgE4,'Titulo del Libro 4', 'Autor 4', 'Editorial 4', 'Fecha de Publicación 4', 'Descripción del Libro 4')">Leer más</span>
                                         </div>
                                         <div class="title-product">
                                             <h3>Biotecnología para principiantes</h3>

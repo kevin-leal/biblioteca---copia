@@ -1,42 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Creative Design landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Universidad Tecnológica de Morelia</title>
-
-    <!-- font icons -->
-    <link rel="stylesheet" href="/vendors/themify-icons/css/themify-icons.css">
-
-    <!-- Bootstrap + Creative Design main styles -->
-    <link rel="stylesheet" href="/css/creative-design.css">
-
-</head>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-
-    <!-- Page Navbar -->
-    <nav id="scrollspy" class="navbar page-navbar navbar-light navbar-expand-md fixed-top" data-spy="affix"
-        data-offset-top="20">
-        <div class="container">
-
-            <a class="navbar-brand" href="/"><img src="/imgs/utm.png" height="50" width="210 " alt="About Us"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="/catalogo">Catálogo</a>
-                    </li>
-
-
+<%- include('../views/elements/header_nav.ejs'); %><!-- End of Page Navbar --> 
+<%- include('../views/elements/libro.ejs'); %>
 
     <!-- section CATÁLOGO -->
     <section>
@@ -59,9 +25,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img1,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer más</span>
                                         </div>
                                         <div class="title-product">
                                             <h3>My face not my heart</h3>
@@ -82,9 +46,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img2,'Titulo del Libro 2', 'Autor 2', 'Editorial 2', 'Fecha de Publicación 2', 'Descripción del Libro 2')">Leer más</span>
                                         </div>
                                         <div class="title-product">
                                             <h3>My face not my heart</h3>
@@ -105,9 +67,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img3,'Titulo del Libro 3', 'Autor 3', 'Editorial 3', 'Fecha de Publicación 3', 'Descripción del Libro 3')">Leer más</span>
                                         </div>
                                         <div class="title-product">
                                             <h3>My face not my heart</h3>
@@ -128,9 +88,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img4,'Titulo del Libro 4', 'Autor 4', 'Editorial 4', 'Fecha de Publicación 4', 'Descripción del Libro 4')">Leer más</span>
                                         </div>
                                         <div class="title-product">
                                             <h3>My face not my heart</h3>
@@ -157,9 +115,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img5,'Titulo del Libro 5', 'Autor 5', 'Editorial 5', 'Fecha de Publicación 5', 'Descripción del Libro 5')">Leer más</span>
                                         </div>
                                         <div class="title-product">
                                             <h3>My face not my heart</h3>
@@ -180,9 +136,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img6,'Titulo del Libro 6', 'Autor 6', 'Editorial 6', 'Fecha de Publicación 6', 'Descripción del Libro 6')">Leer más</span>
                                         </div>
                                         <div class="title-product">
                                             <h3>My face not my heart</h3>
@@ -203,9 +157,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img1,'Titulo del Libro 7', 'Autor 7', 'Editorial 7', 'Fecha de Publicación 7', 'Descripción del Libro 7')">Leer más</span>
                                         </div>
                                         <div class="title-product">
                                             <h3>My face not my heart</h3>
@@ -226,9 +178,7 @@
                                     </div>
                                     <div class="wsk-cp-text">
                                         <div class="category">
-                                            <span class="btn-leer"
-                                                onclick="alert('Aqui nos mandaria a la vista del libro')">Leer
-                                                más</span>
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img2,'Titulo del Libro 8', 'Autor 8', 'Editorial 8', 'Fecha de Publicación 8', 'Descripción del Libro 8')">Leer más</span>
                                         </div>
                                         <div class="title-product">
                                             <h3>My face not my heart</h3>
@@ -267,54 +217,3 @@
 </body>
 
 </html>
-
-<script>
-    // Ventanas modales
-function abrirModal(img, titulo, autor, editorial, fecha, descripcion) {
-      // Obtener el elemento del cuerpo del modal
-      var modalBody = document.getElementById('modalBody');
-
-      // Generar el contenido dinámicamente
-      modalBody.innerHTML = `
-      <img src="${img}" alt="img">
-        <div>
-          <h6>${titulo}</h6>
-          <p>Autor: ${autor}</p>
-          <p>Editorial: ${editorial}</p>
-          <p>Fecha de publicación: ${fecha}</p>
-          <p>Descripción del libro: ${descripcion}</p>
-          <div class="text-center">
-          <button type="button" class="btn btn-dark">Reservar</button>
-          <select class="form-select">
-            <option value="1">1 día</option>
-            <option value="2">2 días</option>
-            <option value="3">3 días</option>
-          </select>      
-          </div>
-        </div>
-      `;
-
-      // Mostrar el modal
-      let myModal = new bootstrap.Modal(document.getElementById('myModal'));
-      myModal.show();
-    }
-    
-    let img1="https://noveladeterror.com/wp-content/uploads/Portada-La-Sangre-MAnda.jpg"
-    let img2="https://m.media-amazon.com/images/I/81ySgYEwArL._SL1500_.jpg"
-    let img3="https://m.media-amazon.com/images/I/819RX3PUdCL._SL1500_.jpg"
-    let img4="https://m.media-amazon.com/images/I/51W9ojaJ3BL._SY445_SX342_.jpg"
-    let img5="https://m.media-amazon.com/images/I/717-MYvdpeL._SL1500_.jpg"
-    let img6="https://m.media-amazon.com/images/I/91+Jc1QEW0L._SL1500_.jpg"
-</script>
-
-<style>
-    .modal-body {
-      display: flex;
-    }
-
-    .modal-body img {
-      width: 200px;
-      height: auto;
-      margin-right: 20px;
-    }
-  </style>

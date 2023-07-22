@@ -1,0 +1,64 @@
+-<!-- Ventana modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Encabezado de la ventana modal -->
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title">Información del libro</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- Cuerpo de la ventana modal -->
+      <div class="modal-body" id="modalBody">
+        <!-- Contenido del modal generado dinámicamente -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Ventanas modales
+function abrirModalEbook(img, titulo, autor, editorial, fecha, descripcion) {
+    // Obtener el elemento del cuerpo del modal
+    var modalBody = document.getElementById('modalBody');
+
+    // Generar el contenido dinámicamente
+    modalBody.innerHTML = `
+    <img src="${img}" alt="img">
+      <div>
+        <h6>${titulo}</h6>
+        <p>Autor: ${autor}</p>
+        <p>Editorial: ${editorial}</p>
+        <p>Fecha de publicación: ${fecha}</p>
+        <p>Descripción del libro: ${descripcion}</p>
+        <div class="text-center">
+        <button type="button" class="btn btn-dark">Descargar</button>    
+        </div>
+      </div>
+    `;
+
+    // Mostrar el modal
+    let myModal = new bootstrap.Modal(document.getElementById('myModal'));
+    myModal.show();
+  }
+  
+  let imgE1="https://noveladeterror.com/wp-content/uploads/Portada-La-Sangre-MAnda.jpg"
+  let imgE2="https://m.media-amazon.com/images/I/81ySgYEwArL._SL1500_.jpg"
+  let imgE3="https://m.media-amazon.com/images/I/819RX3PUdCL._SL1500_.jpg"
+  let imgE4="https://m.media-amazon.com/images/I/51W9ojaJ3BL._SY445_SX342_.jpg"
+  let imgE5="https://m.media-amazon.com/images/I/717-MYvdpeL._SL1500_.jpg"
+  let imgE6="https://m.media-amazon.com/images/I/91+Jc1QEW0L._SL1500_.jpg"
+</script>
+
+<style>
+  .modal-body {
+    display: flex;
+  }
+
+  .modal-body img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+  }
+</style>
