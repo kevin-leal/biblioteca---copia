@@ -26,23 +26,25 @@
     <h2>Bienvenido a la biblioteca de la UTM</h2>
     <div class="container" id="container">
       <div class="form-container sign-up-container">
-        <form action="#">
+        <form action="/register" method="POST">
           <h1>Crear Tu Cuenta</h1>
           <span>Ingresa los siguientes datos para tu registro</span>
-          <input type="text" placeholder="Nombre" />
-          <input type="email" placeholder="Correo electronico" />
-          <input type="password" placeholder="Contraseña" />
+          <input name="nombre" id="nombre" type="text" placeholder="Nombre" />
+          <input name="matricula" id="matricula" type="text" placeholder="Matricula" />
+          <input name="correo" id="correo" type="email" placeholder="Correo electronico" />
+          <input name="tipo_usuario" id="tipo_usuario" type="hidden" value="3" />
+          <input name="password" id="password" type="password" placeholder="Contraseña" />
           <button>Registrarse</button>
           <hr />
           <a href="/" class="btn">Volver</a>
         </form>
       </div>
       <div class="form-container sign-in-container">
-        <form action="#">
+        <form action="/auth" method="POST">
           <h1>Iniciar Sesion</h1>
           <span>Ingresa los datos para iniciar sesion</span>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
+          <input id="correo" name="correo" type="email" placeholder="Correo electronico" />
+          <input id="password" name="password" type="password" placeholder="Contraseña" />
           <a href="#">¿Olvidaste tu contraseña?</a>
           <button>Iniciar Sesion</button>
           <hr />
