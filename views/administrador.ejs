@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../views/elements/header_nav.ejs'); %>
+<%- include('../views/elements/libro.ejs'); %>
+<%- include('../views/elements/libro_ebook.ejs'); %>
+
+    <!-- About Section -->
+    <section id="about">
+        <!-- Container -->
+        <div class="container">
+            <!-- About wrapper -->
+            <div class="about-wrapper">
+                <div class="after">
+                    <h1> VISTA DE ADMINISTRADOR </h1>
+                </div>
+                <div class="content">
+                    <h5 class="title mb-3">VISTA DE ADMINISTRADOR </h5>
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col">
+                            <p>CON EL FIN DE CONTAR CON UN MEJOR SERVICIO, EL USUARIO SE RESPONSABILIZA DEL MATERIAL QUE LE SEA PROPORCIONADO PARA CONSULTA BAJO CUALQUIER TIPO DE PRÉSTAMO Y RESPETAR LAS FECHAS QUE SE ESTABLEZCAN PARA SU DEVOLUCIÓN.</p>
+                            <p>1.	PRÉSTAMO A DOMICILIO: ESTE SERVICIO FUNCIONA ÚNICA Y EXCLUSIVAMENTE PARA EL ALUMNO, DOCENTE Y ADMINISTRATIVO, PUDIENDO OBTENER 3 EJEMPLARES DE TÍTULO DIFERENTE CON UN PERIODO DE 3 DÍAS COMO MÁXIMO.</p>
+                        </div>
+                        <div class="col">
+                            <p>2.	NO SE PODRÁ PRESTAR UN LIBRO, SI SOLO EXISTE UN EJEMPLAR DEL MISMO.</p>
+                            <p>3.	EL PRÉSTAMO ES INTRANSFERIBLE Y LA PERSONA QUE FIRME EL COMPROBANTE SE HARÁ RESPONSABLE DEL BUEN USO DEL EJEMPLAR Y DE LA DEVOLUCIÓN A TIEMPO.</p>
+                        </div>
+                    </div><!-- End of Row -->
+                    <a href="/informacion">Leer más...</a>
+                </div>
+            </div><!-- End of About Wrapper -->
+        </div> <!-- End of Container-->
+    </section><!--End of Section -->
+
+
+    <!-- section CATÁLOGO -->
+    <section>
+        <!-- Container -->
+        <div class="container">
+            <div class="card-deck mt-3">
+                <div class="container text-center">
+                    <h1>Libros</h1>
+                </div>
+                <div class="shell">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="wsk-cp-product">
+                                    <div class="wsk-cp-img">
+                                        <img src="https://www.gandhi.com.mx/media/catalog/product/9/7/9789587627206.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=478&width=300&canvas=300:478" alt="Product" class="img-responsive" />
+                                    </div>
+                                    <div class="wsk-cp-text">
+                                        <div class="category">
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img1,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer más</span>
+                                        </div>
+                                        <div class="title-product">
+                                            <h3>Lógica De Programación</h3>
+                                        </div>
+                                        <div class="description-prod">
+                                            <p>Muchas personas confunden la Programación con la Lógica 
+                                                de Programación. La primera involucra el conocimiento de técnicas e instrucciones de un determinado lenguaje 
+                                                a través de los cuales se hace sencillo lograr que el computador obtenga unos resultados 
+                                                mucho más rápido que nosotros.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="wsk-cp-product">
+                                    <div class="wsk-cp-img">
+                                        <img src="https://anayamultimedia.es/imagenes/libros/grande/9788441543539-introduccion-a-la-programacion.jpg" alt="Product" class="img-responsive" />
+                                    </div>
+                                    <div class="wsk-cp-text">
+                                        <div class="category">
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img2,'Titulo del Libro 2', 'Autor 2', 'Editorial 2', 'Fecha de Publicación 2', 'Descripción del Libro 2')">Leer más</span>
+                                        </div>
+                                        <div class="title-product">
+                                            <h3>Introducción a la programación</h3>
+                                        </div>
+                                        <div class="description-prod">
+                                            <p>Vivimos rodeados de dispositivos 'inteligentes' que se caracterizan 
+                                                por ser, en mayor o menor medida, programables.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="wsk-cp-product">
+                                    <div class="wsk-cp-img">
+                                        <img src="https://www.elsotano.com/imagenes_grandes/9789587/978958792268.JPG" alt="Product" class="img-responsive" />
+                                    </div>
+                                    <div class="wsk-cp-text">
+                                        <div class="category">
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img3,'Titulo del Libro 3', 'Autor 3', 'Editorial 3', 'Fecha de Publicación 3', 'Descripción del Libro 3')">Leer más</span>
+                                        </div>
+                                        <div class="title-product">
+                                            <h3>Lógica De Programación. Solucionario En Pseudocódigo</h3>
+                                        </div>
+                                        <div class="description-prod">
+                                            <p>En este libro usted encontrará soluciones posibles escritas en seudocódigo, según los estándares 
+                                                utilizados en mi libro Lógica de programación, y de forma que se pueda fomentar el desarrollo de 
+                                                la lógica que se utiliza en la programación de computadores desde una perspectiva general sin 
+                                                estar atada a ningún tipo de lenguaje de programación específico.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="wsk-cp-product">
+                                    <div class="wsk-cp-img">
+                                        <img src="https://www.publicacionesupec.org/public/presses/1/submission_64_63_coverImage_es_ES_t.jpg" alt="Product" class="img-responsive" />
+                                    </div>
+                                    <div class="wsk-cp-text">
+                                        <div class="category">
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModal(img4,'Titulo del Libro 4', 'Autor 4', 'Editorial 4', 'Fecha de Publicación 4', 'Descripción del Libro 4')">Leer más</span>
+                                        </div>
+                                        <div class="title-product">
+                                            <h3>Fundamentos de programación utilizando PSeInt</h3>
+                                        </div>
+                                        <div class="description-prod">
+                                            <p>La presente obra está dirigida a estudiantes y profesionales de informática o áreas afines. 
+                                                Su objetivo es proporcionar una guía teórica y práctica de fácil uso y, a su vez, rigurosa 
+                                                en la programación de computadoras.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align: center;"class="text-box" >
+                        <a href="/catalogo" class="btn btn-white btn-animate">Ver más</a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="card-deck mt-3">
+                <div class="container text-center">
+                    <h1>E-books</h1>
+                </div>
+                <div class="shell">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="wsk-cp-product">
+                                    <div class="wsk-cp-img">
+                                        <img src="https://img2.rtve.es/im/5886324/?w=297" alt="Product" class="img-responsive" />
+                                    </div>
+                                    <div class="wsk-cp-text">
+                                        <div class="category">
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModalEbook(imgE1,'Titulo del Libro 1', 'Autor 1', 'Editorial 1', 'Fecha de Publicación 1', 'Descripción del Libro 1')">Leer más</span>
+                                        </div>
+                                        <div class="title-product">
+                                            <h3>Cocina vegana creativa</h3>
+                                        </div>
+                                        <div class="description-prod">
+                                            <p>
+                                                La nutricionista Lucía Martínez nos recomienda una novedad editorial: Cocina Vegana 
+                                                Creativa (Zenith, 2021) de Virginia Garcia</p>
+                                        </div>
+                                        <div class="card-footer">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="wsk-cp-product">
+                                    <div class="wsk-cp-img">
+                                        <img src="https://m.media-amazon.com/images/I/51AO42xrkcL._SX331_BO1,204,203,200_.jpg" alt="Product" class="img-responsive" />
+                                    </div>
+                                    <div class="wsk-cp-text">
+                                        <div class="category">
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModalEbook(imgE2,'Titulo del Libro 2', 'Autor 2', 'Editorial 2', 'Fecha de Publicación 2', 'Descripción del Libro 2')">Leer más</span>
+                                        </div>
+                                        <div class="title-product">
+                                            <h3>Manual de Energías Renovables</h3>
+                                        </div>
+                                        <div class="description-prod">
+                                            <p>Las energías renovables son energías que se obtienen de fuentes naturales inagotables, 
+                                                ya sea por la inmensa cantidad de energía que contienen, o porque son capaces de regenerarse 
+                                                por medios naturales.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="wsk-cp-product">
+                                    <div class="wsk-cp-img">
+                                        <img src="https://m.media-amazon.com/images/I/41QHAldyNEL._BO1,204,203,200_.jpg" alt="Product" class="img-responsive" />
+                                    </div>
+                                    <div class="wsk-cp-text">
+                                        <div class="category">
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModalEbook(imgE3,'Titulo del Libro 3', 'Autor 3', 'Editorial 3', 'Fecha de Publicación 3', 'Descripción del Libro 3')">Leer más</span>
+                                        </div>
+                                        <div class="title-product">
+                                            <h3>Diseño textil: Tejidos y técnicas</h3>
+                                        </div>
+                                        <div class="description-prod">
+                                            <p>No es infrecuente que el extraordinario trabajo de los diseñadores textiles pase inadvertido y que quienes recojan 
+                                                todas las alabanzas sean los diseñadores de moda. El diseño textil disfruta de escaso reconocimiento, sin embargo, 
+                                                sin textiles innovadores, el diseño de moda perdería mucho interés.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="wsk-cp-product">
+                                    <div class="wsk-cp-img">
+                                        <img src="https://www.reverte.com/media/reverte/images/thumbs/edition-73864-236x329.jpg" alt="Product" class="img-responsive" />
+                                    </div>
+                                    <div class="wsk-cp-text">
+                                        <div class="category">
+                                            <span class="btn-leer" type="button" class="btn btn-primary" onclick="abrirModalEbook(imgE4,'Titulo del Libro 4', 'Autor 4', 'Editorial 4', 'Fecha de Publicación 4', 'Descripción del Libro 4')">Leer más</span>
+                                        </div>
+                                        <div class="title-product">
+                                            <h3>Biotecnología para principiantes</h3>
+                                        </div>
+                                        <div class="description-prod">
+                                            <p>La biotecnología es una ciencia aplicada que utiliza organismos vivos y sus procesos 
+                                                bioquímicos con la finalidad de obtener, crear o modificar productos para usos específicos.</p>
+                                        </div>
+                                        <div class="card-footer">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align: center;"class="text-box" >
+                        <a href="/ebook" class="btn btn-white btn-animate">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- End of Container -->
+    </section><!-- End of Section -->
+
+    <!-- section -->
+    <section id="sanciones">
+        <!-- Container -->
+        <div class="container">
+            <!-- Row -->
+            <div class="after">
+                <h1> SANCIONES </h1>
+            </div>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-5">
+                    
+                    <p>1.	EL USUARIO QUE MALTRATE CUALQUIER MATERIAL PROPIEDAD DEL CENTRO, SE LE SANCIONARA CON EL PAGO DEL COSTO ACTUAL DEL MISMO.</p>
+                    <p class="text-muted">2.	A LA PERSONA QUE PIERDA CUALQUIER MATERIAL DEBERÁ DE CUBRIR EL IMPORTE DEL MISMO EN UN PLAZO NO MAYOR DE 15 DÍAS NATURALES.
+                    </p>
+                    <a href="/informacion">Leer más...</a>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="img-wrapper">
+                        <div class="after right"></div>
+                        <img src="/imgs/sanciones.jpg" class="w-100" alt="About Us">
+                    </div>
+                </div>
+            </div><!-- End of Row -->
+        </div><!-- End of Container-->
+    </section><!-- End of Section -->
+
+
+    <!-- Section -->
+    <%- include('../views/elements/footer.ejs'); %>
+<!-- End of Section -->
+
+    <!-- core  -->
+    <script src="/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Creative Design js -->
+    <script src="/js/creative-design.js"></script>
+
+</body>
+
+</html>
+<script>
+    function redireccionarPagina(){
+    window.setTimeout( abrirURL, 3000 ); // 3 segundos
+};
+    
+function abrirURL(){
+    //Abrir URL que necesites
+    console.log("Han pasado 3 segundos");
+};
+</script>

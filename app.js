@@ -26,7 +26,7 @@ app.use('/users', usersRouter);
 const dotenv= require('dotenv');
 dotenv.config({path:'./env/.env'});
 
-//Invocara  Bcrypt
+//Invocar a  Bcrypt
 const bcryptjs = require('bcryptjs');
 
 //Variables de session
@@ -53,7 +53,15 @@ app.post('/register',async(req, res)=>{
      if (error) {
       console.log(error);
      }else{
-      res.send('ALTA EXITOSA')
+      res.render('iniciosesion',{
+        alert:true,
+        alertTitle: "REGISTRO",
+        alertMessage: "REGISTRO EXITOSO",
+        alertIcon:"success",
+        showConfirmButton: false,
+        timer: 1500,
+        ruta:'iniciosesion'
+      });
      }
   })
   
@@ -68,11 +76,40 @@ app.post('/auth', async (req, res)=>{
     connection.query('SELECT * FROM usuario WHERE correo = ?',[correo], async (error, results)=>{
       
       if (results.length == 0 || !(await bcryptjs.compare(password, results[0].password))) {
-        res.send('USUARIO O PASSWORD INCORRECTAS');
+        res.render('iniciosesion',{
+          alert:true,
+          alertTitle: "Error",
+          alertMessage: "USUARIO O PASSWORD INCORRECTOS",
+          alertIcon:"error",
+          showConfirmButton: true,
+          timer: false,
+          ruta:'iniciosesion'
+        });
       }else{
-        res.send('LOGIN CORRECTO');
+        req.session.loggeding = true;
+        req.session.correo= results[0].correo
+        res.render('alumno',{
+          alert:true,
+          alertTitle: "Conexion exitosa",
+          alertMessage: "BIENVENIDO",
+          alertIcon:"success",
+          showConfirmButton: false,
+          timer: 1500,
+          ruta:'alumno'
+        });
       }
     })
+  }else{
+    res.render('iniciosesion',{
+      alert:true,
+      alertTitle: "Advertencia",
+      alertMessage: "POR FAVOR INGRESE USUARIO O PASSWORD",
+      alertIcon:"warning",
+      showConfirmButton: true,
+      timer: 1500,
+      ruta:'iniciosesion'
+    });
+
   }
 
 })

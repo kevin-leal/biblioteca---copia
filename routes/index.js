@@ -4,6 +4,7 @@ var router = express.Router();
 /* GET home page. */
 router.get("/", function (req, res, next) {
   res.render("index", { title: "INICIO" });
+  
 });
 
 router.get("/ebook", function (req, res, next) {
@@ -23,6 +24,17 @@ router.get("/iniciosesion", function (req, res, next) {
 
 router.get("/libro", function (req, res, next) {
   res.render("libro", { title: "LIBRO" });
+});
+
+
+router.get("/administrador", function (req, res, next) {
+  res.render("administrador", { title: "iniciosesion" });
+});
+
+
+//auth pages
+router.get("/alumno", function (req, res, next) {
+  res.render("alumno", { title: "iniciosesion" });
 });
 
 
