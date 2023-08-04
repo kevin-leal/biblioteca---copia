@@ -1,6 +1,3 @@
-let usuariosRoutes = require('./usuarios.routes.js')
-let indexRoutes = require('./index.routes.js')  
-
 var express = require("express");
 var router = express.Router();
 
@@ -40,8 +37,6 @@ router.get("/alumno", function (req, res, next) {
   res.render("alumno", { title: "iniciosesion" });
 });
 
-//Api Rest (Aqui ponemos las rutas)
-router.use('/api',usuariosRoutes)
-router.use(indexRoutes)
+
 
 module.exports = router;
