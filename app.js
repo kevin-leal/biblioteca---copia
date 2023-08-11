@@ -86,17 +86,61 @@ app.post('/auth', async (req, res)=>{
           ruta:'iniciosesion'
         });
       }else{
-        req.session.loggeding = true;
-        req.session.correo= results[0].correo
-        res.render('alumno',{
-          alert:true,
-          alertTitle: "Conexion exitosa",
-          alertMessage: "BIENVENIDO",
-          alertIcon:"success",
-          showConfirmButton: false,
-          timer: 1500,
-          ruta:'alumno'
-        });
+
+        if (typeof localStorage === "undefined" || localStorage === null) {
+          var LocalStorage = require('node-localstorage').LocalStorage;
+          localStorage = new LocalStorage('./scratch');
+        }
+        
+        nivelusuario= results[0].tipo_usuario;
+
+        let persona={
+          usuario:correo,
+          logged: true,
+          level: nivelusuario,
+        };
+
+        localStorage.setItem("nombre", JSON.stringify(persona));
+        console.log(persona);
+
+        if (nivelusuario === 3) {
+          res.render('alumno',{
+            alert:true,
+            alertTitle: "Conexion exitosa",
+            alertMessage: "BIENVENIDO",
+            alertIcon:"success",
+            showConfirmButton: false,
+            timer: 1500,
+            ruta:'alumno'
+          });
+        }
+
+        if (nivelusuario === 2) {
+          res.render('administrador',{
+            alert:true,
+            alertTitle: "Conexion exitosa",
+            alertMessage: "BIENVENIDO",
+            alertIcon:"success",
+            showConfirmButton: false,
+            timer: 1500,
+            ruta:'administrador'
+          });
+        }
+
+        if (nivelusuario === 1) {
+          res.render('superadministrador',{
+            alert:true,
+            alertTitle: "Conexion exitosa",
+            alertMessage: "BIENVENIDO",
+            alertIcon:"success",
+            showConfirmButton: false,
+            timer: 1500,
+            ruta:'superadministrador'
+          });
+        }
+
+        
+
       }
     })
   }else{

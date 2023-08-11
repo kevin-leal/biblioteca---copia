@@ -293,6 +293,22 @@
     <!-- Creative Design js -->
     <script src="/js/creative-design.js"></script>
 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <% if(typeof alert != "undefined") { %>
+      <script>
+        Swal.fire({
+          title: '<%= alertTitle %>',
+          text: '<%= alertMessage %>',
+          icon: '<%= alertIcon %>',
+          showConfirmButton: <%= showConfirmButton%>,
+          timer: <%= timer%>
+        }).then(()=>{
+          window.location='/<%= ruta%>'
+        })
+
+      </script> 
+    <% } %>
+
 </body>
 
 </html>

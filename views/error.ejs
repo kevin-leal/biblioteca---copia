@@ -1,6 +1,65 @@
-extends layout
+<!DOCTYPE html>
+<html lang="en">
 
-block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+<%- include('../views/elements/header_nav.ejs'); %><!-- End of Page Navbar --> 
+
+    <!-- section CATÁLOGO -->
+    <section>
+        <!-- Container -->
+        <div class="container">
+            <div class="card-deck mt-3">
+                <div class="container text-center">
+                </div>
+            <div class="card-deck mt-3">
+                <div class="container text-center">
+                    <h1>PARECE QUE ALGO HA SALIDO MAL!!! </h1>
+                </div>
+
+
+                <div class="shell">
+                    <div class="container">
+                                    <!-- Introduccion biblioteca wrapper -->
+            <div class="about-wrapper">
+    
+                <div class="content">
+                    
+                    <!-- row -->
+                    <div class="row">
+                        <div class="text-align">
+                            <p>PARECE QUE HA SUCEDIDO UN ERROR, ESTO PUEDE DEBERSE A:</p>
+                            <p>UN ERROR DEL SERVIDOR (ERROR 505)</p>
+                            <p>TE HAS DESCONECTADO SUBITAMENTE</p>
+                            <p>HAS ENTRADO CON UN NIVEL DE USUARIO DISTINTO</p>
+                            <br>
+                            <p>POR FAVOR VUELVE AL INICIO O A LOGUEARTE DE NUEVO!!!</p>
+                            <br>
+                            <a class="button" href="/">VOLVER A INICIO</a>
+                            <br>
+                            <a class="button" href="/iniciosesion">VOLVER A LOGIN</a>   
+                        </div>
+
+            
+        
+                    </div><!-- End of Row -->
+                </div>
+            </div><!-- End of About Wrapper -->
+                   
+             
+
+    <!-- Section -->
+    <%- include('../views/elements/footer.ejs'); %>
+    <!-- End of Section -->
+
+    <!-- core  -->
+    <script src="/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Creative Design js -->
+    <script src="/js/creative-design.js"></script>
+
+</body>
+
+</html>
